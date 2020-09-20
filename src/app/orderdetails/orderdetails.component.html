@@ -1,0 +1,18 @@
+<h2 class="bg-warning text-center">Details of User ID - {{order.id}}</h2>
+<table class="table">
+    <tr>
+      <th>Id</th>
+      <th>Username</th>
+      <th>Mobile</th>
+      <th>Email</th>
+      <th>City</th>
+    </tr>
+    <tr>
+      <td>{{order.id}}</td>
+      <td>{{order.username}}</td>
+      <td>{{order.mobile}}</td>
+      <td>{{order.email}}</td>
+      <td>{{order.city}}</td>
+    </tr>
+    <tr><button (click)='closeDetails()' class="btn btn-danger">Close</button></tr>
+  </table>
