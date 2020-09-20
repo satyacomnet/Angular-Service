@@ -8,7 +8,8 @@ import { catchError, map, tap } from 'rxjs/operators';
 })
 export class OrderService {
 
-  private apiUrl="http://localhost:3000/users";
+  private apiUrl="https://jsonplaceholder.typicode.com/users";
+  // private apiUrl="http://localhost:3000/users";
   constructor(private http:HttpClient) { }
 
   getOrders() : Observable<any>{
